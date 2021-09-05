@@ -30,6 +30,9 @@ BuildRequires:  golang(github.com/lib/pq)
 BuildRequires:  golang(github.com/lib/pq/hstore)
 BuildRequires:  golang(github.com/mattn/go-sqlite3)
 BuildRequires:  golang(github.com/jinzhu/now)
+%if %{with check}
+BuildRequires:  golang(github.com/erikstmartin/go-testdb)
+%endif
 
 %description
 %{common_description}
